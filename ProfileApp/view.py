@@ -22,6 +22,7 @@ def dreamJob(request):
 def roleModel(request):
     return render(request, 'roleModel.html')
 
+
 def showMydata(request):
     id ="65342310063-0"
     name = "Thanaphon"
@@ -46,4 +47,3 @@ def showMydata(request):
     context = {'name':name,'id':id,'add':add,'gender':gender,'work':work,'weight':weight,
                'height':height,'color':color,'food':food,'productlist':productlist}
     return render(request,'showMydata.html',context)
-
